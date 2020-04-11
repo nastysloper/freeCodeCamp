@@ -56,7 +56,7 @@ tests:
     testString: assert(typeof Thermostat === 'function' && typeof Thermostat.constructor === 'function');
   - text: <code>class</code> keyword should be used.
     testString: assert(code.match(/class/g));
-  - text: <code>Thermostat</code> should be able to be instantiated.
+  - text: <code>Thermostat</code>, once instantiated, should return the Celcius conversion for 32 degrees Fahrenheit.
     testString: assert((() => {const t = new Thermostat(32);return typeof t === 'object' && t.temperature === 0;})());
   - text: A <code>getter</code> should be defined.
     testString: assert((() => {const desc = Object.getOwnPropertyDescriptor(Thermostat.prototype, 'temperature');return !!desc && typeof desc.get === 'function';})());
