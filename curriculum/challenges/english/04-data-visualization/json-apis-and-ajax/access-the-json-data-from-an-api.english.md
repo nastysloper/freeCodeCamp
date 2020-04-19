@@ -34,7 +34,7 @@ For the cat with the "id" of 2, print to the console the second value in the <co
 
 ```yml
 tests:
-  - text: Your code should use bracket and dot notation to access the proper code name, and print "Loki" to the console.
+  - text: Your code should use bracket and dot notation to access the proper code name, and print "Loki" to the console, all in one line.
     testString: assert(code.match(/console\s*\.\s*log\s*\(\s*json\s*\[2\]\s*(\.\s*codeNames|\[\s*('|`|")codeNames\2\s*\])\s*\[\s*1\s*\]\s*\)/g));
 
 ```
